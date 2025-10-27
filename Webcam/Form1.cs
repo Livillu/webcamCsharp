@@ -68,14 +68,15 @@ namespace Webcam
 
             if (File.Exists("screen"))
             {
+                
                 connection = new SqliteConnection("Data Source=screen");
                 connection.Open();
-                SqliteCommand command =new SqliteCommand("select count(*) from packgimg where id='20240704_160712'", connection);
+                /*SqliteCommand command =new SqliteCommand("select count(*) from packgimg where id='20240704_160712'", connection);
                 if (command.ExecuteScalar().ToString() == "0")
                 {
                     command.CommandText = $"insert into packgimg(id,cdate) values('20240704_160712','{DateTime.Today.ToString("yyyyMMdd")}')";
                     command.ExecuteNonQuery();
-                }
+                }*/
             }
             else {
                 MessageBox.Show("open fail !!!");
@@ -96,6 +97,7 @@ namespace Webcam
 
         private void butStop_Click(object sender, EventArgs e)
         {
+            if (FinalVideo == null) return;
             if (butStop.Text == "Stop Record")
             {
                 butStop.Text = "Stop";

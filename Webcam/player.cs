@@ -27,11 +27,16 @@ namespace Webcam
 
         private void player_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
             listBox1.Items.Clear();
             SqliteConnection connection = new SqliteConnection("Data Source=screen");
             connection.Open();
             SqliteCommand command = new SqliteCommand("select id from packgimg", connection);
-            var dr= command.ExecuteReader();
+            var dr = command.ExecuteReader();
             while (dr.Read())
             {
                 listBox1.Items.Add(dr[0].ToString());

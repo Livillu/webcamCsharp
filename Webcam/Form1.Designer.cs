@@ -44,7 +44,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 176);
+            this.button1.Location = new System.Drawing.Point(12, 249);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(112, 23);
             this.button1.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             // butStop
             // 
-            this.butStop.Location = new System.Drawing.Point(12, 47);
+            this.butStop.Location = new System.Drawing.Point(12, 120);
             this.butStop.Name = "butStop";
             this.butStop.Size = new System.Drawing.Size(112, 23);
             this.butStop.TabIndex = 2;
@@ -64,7 +64,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 89);
+            this.button2.Location = new System.Drawing.Point(12, 162);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(112, 23);
             this.button2.TabIndex = 3;
@@ -74,7 +74,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(12, 131);
+            this.button3.Location = new System.Drawing.Point(12, 204);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(112, 23);
             this.button3.TabIndex = 4;
@@ -95,7 +95,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Location = new System.Drawing.Point(185, 76);
+            this.groupBox1.Location = new System.Drawing.Point(188, 28);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(550, 346);
             this.groupBox1.TabIndex = 6;
@@ -113,7 +113,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(188, 51);
+            this.label1.Location = new System.Drawing.Point(12, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 15);
             this.label1.TabIndex = 7;
@@ -121,9 +121,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(246, 49);
+            this.textBox1.Location = new System.Drawing.Point(12, 75);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(483, 24);
+            this.textBox1.Size = new System.Drawing.Size(112, 24);
             this.textBox1.TabIndex = 8;
             // 
             // button5
@@ -151,7 +151,7 @@
             this.Controls.Add(this.butStop);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Vidio";
+            this.Text = "商品掃描";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
